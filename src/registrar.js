@@ -1,0 +1,1 @@
+module.exports = sift => ({req, res}) => sift(req).call(null, ({req, res}))

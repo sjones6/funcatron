@@ -1,0 +1,17 @@
+{
+  "name": "func-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/ --opts ./mocha.opts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "utils": "file:local_modules/utils"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3"
+  }
+}
