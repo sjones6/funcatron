@@ -1,3 +1,4 @@
-module.exports = createServer => router => {
-    return createServer((req, res) => router({req, res}));
-}
+const { createServer } = require("http")
+const makeHttp = require('./http')
+
+module.exports = makeHttp(createServer)

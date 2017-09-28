@@ -4,7 +4,11 @@ const { spawn } = require('child_process')
 
 let server;
 
-function restart() {
+function restart(reason, file) {
+    if (reason === "rename" || /^\.git/.test(file)) {
+        return
+    }
+
     if (server) {
         server.kill()
     }

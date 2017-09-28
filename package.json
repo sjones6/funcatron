@@ -1,15 +1,22 @@
 {
-  "name": "func-server",
-  "version": "1.0.0",
-  "description": "",
+  "name": "funcatron",
+  "version": "0.0.1",
+  "description": "A functional framework for composing Node applications",
+  "keywords": [
+    "functional", "framework"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/ --opts ./mocha.opts"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "sjones6",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/sjones6/funcatron.git"
+  },
   "dependencies": {
-    "utils": "file:local_modules/utils"
+    "route-parser": "^0.0.5"
   },
   "devDependencies": {
     "mocha": "^3.5.3"
