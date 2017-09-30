@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "A functional framework for composing Node applications",
   "keywords": [
-    "functional", "framework"
+    "functional",
+    "framework"
   ],
   "main": "index.js",
   "scripts": {
@@ -12,10 +13,11 @@
   "author": "sjones6",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/sjones6/funcatron.git"
+    "type": "git",
+    "url": "https://github.com/sjones6/funcatron.git"
   },
   "dependencies": {
+    "call-reduce": "^0.0.1",
     "route-parser": "^0.0.5"
   },
   "devDependencies": {

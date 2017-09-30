@@ -10,16 +10,21 @@ function restart(reason, file) {
     }
 
     if (server) {
-        server.kill()
+        server.close()
     }
     console.log("Restarting ... ")
-    server = spawn("node", [
-        join(process.cwd(), "app.js")
-    ])
-    server.stderr.on('data', err => {
-        console.log(`server err: ${err}`)
+    Object.keys(require.cache).forEach(key => {
+        delete require.cache[key];
     })
-    server.stdout.on('data', data => console.log(data.toString("utf8")))
+    server = require('./example/app')
+
+    // server = spawn("node", [
+    //     join(process.cwd(), "./example/app.js")
+    // ])
+    // server.stderr.on('data', err => {
+    //     console.log(`server err: ${err}`)
+    // })
+    // server.stdout.on('data', data => console.log(data.toString("utf8")))
 }
 fs.watch(process.cwd(), {recursive: true}, restart)
 
