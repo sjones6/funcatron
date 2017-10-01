@@ -6,7 +6,7 @@ const makeAuth = group({
     handler: middleStack
 })
 
-module.exports = makeAuth(
+module.exports = makeAuth([
     {
         path: '/login',
         handler: stack(
@@ -24,4 +24,4 @@ module.exports = makeAuth(
         path: '/logout',
         handler: ({req, res}) => res.end('Logged out!')
     }
-)
+])
