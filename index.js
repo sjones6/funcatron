@@ -1,7 +1,10 @@
 const make = require("./src/make")
+
 module.exports = {
-    make,
     funcatron: make,
+    group: require("./src/group"),
+    make,
+    pipe: require("./src/pipe"),
     stack: require("./src/stack"),
-    group: require("./src/group")
+    static: require("./src/static")
 }

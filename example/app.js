@@ -1,13 +1,5 @@
-const {
-    funcatron,
-    stack
-} = require("./../index")
+const server = require('./http')
 
-const http = funcatron([
-    ...require('./auth'),
-    ...require('./user')
-])
+server.listen(9025)
 
-http.listen(9025)
-
-module.exports = http;
+module.exports = server

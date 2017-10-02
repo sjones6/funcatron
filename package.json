@@ -17,8 +17,8 @@
     "url": "https://github.com/sjones6/funcatron.git"
   },
   "dependencies": {
-    "call-reduce": "^0.0.1",
-    "route-parser": "^0.0.5"
+    "path-to-regexp": "^2.0.0",
+    "serve-static": "^1.13.1"
   },
   "devDependencies": {
     "mocha": "^3.5.3"

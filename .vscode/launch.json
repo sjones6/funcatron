@@ -4,8 +4,14 @@
             {
                 "type": "node",
                 "request": "launch",
-                "name": "Launch Program",
+                "name": "Launch Watcher",
                 "program": "${workspaceRoot}/watcher.js"
+            },
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Test",
+                "program": "${workspaceRoot}/run-tests.js"
             }
         ]
     }

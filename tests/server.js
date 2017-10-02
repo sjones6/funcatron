@@ -6,7 +6,7 @@ describe("server", function() {
 
     it("should return an http server when passed a router", function() {
         const httpServer = makeServer(() => {})
-        assert.equal(httpServer instanceof Server, true) 
+        assert.equal(httpServer instanceof Server, true)
     })
 
 })
