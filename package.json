@@ -1,6 +1,6 @@
 {
   "name": "funcatron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A functional framework for composing Node applications",
   "keywords": [
     "functional",
