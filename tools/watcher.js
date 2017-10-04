@@ -5,6 +5,9 @@ const { spawn } = require("child_process")
 
 let server;
 
+process.on("uncaughtException", e => console.log(e.stack));
+
+
 function restartServer() {
     if (server) {
         server.close()
@@ -13,7 +16,7 @@ function restartServer() {
     Object.keys(require.cache).forEach(key => {
         delete require.cache[key];
     })
-    server = require('./example/app')
+    server = require('../example/app')
 }
 
 
@@ -23,7 +26,7 @@ function restart(reason, file) {
     }
 
     tester = spawn("node", [
-        join(process.cwd(), "run-tests.js")
+        join(process.cwd(), "/tools/run-tests.js")
     ])
     tester.stderr.on('data', err => {
         console.log(`server err: ${err}`)

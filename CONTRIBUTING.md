@@ -6,7 +6,22 @@ If you are looking to help to with a code contribution our project uses Node (wi
 
 Checkout the [current projects](https://github.com/sjones6/funcatron/projects) to see what features need developed or are in progress.
 
-## Never made an open source contribution before? Wondering how contributions work in the in our project? Here's a quick rundown!
+Funcatron uses functional programming in JS. Here are some helpful places to learn functional programming in JS:
+
+* [Fun Fun Function (channel and linked playlist)](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+* [_Composing Software_ series by Eric Elliott](https://medium.com/javascript-scene/the-rise-and-fall-and-rise-of-functional-programming-composable-software-c2d91b424c8c#.2dfd6n6qe)
+
+You'll also want to be familiar with ES6, especially arrow functions, rest and spread, and object destructuring. [Here's a good summary](https://github.com/lukehoban/es6features).
+
+Generally speaking, here are some the ways that Funcatron uses functional programming by convention:
+
+* Never use `new` or `this` if at all possible (use closures instead)
+* Use `const` and _rarely_ `let`
+* ES6 arrow functions to succinctly create 
+* No side effects but `pipe` values through a series of functions
+* Rarely modify parameters (the one exception is the `req` and `opt` objects) but return a new value
+
+## Never made an open source contribution before? Wondering how contributions work in the project? Here's a quick rundown!
 
 * Find an issue that you are interested in addressing or a feature that you would like to add.
 * Fork the repository associated with the issue to your local GitHub organization. This means that you will have a copy of the repository under `your-GitHub-username/repository-name`.
@@ -33,5 +48,5 @@ A couple developer tools are setup to make the work easier:
 
 * Watch files for changes, run tests, and restart the example project: `node watcher.js` 
 * run tests with mocha: `npm test`
-* For VS Code users: there's a few launch scripts bundled
+* For VS Code users: there's a few launch scripts bundled in `.vscode` directory
 

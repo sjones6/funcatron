@@ -1,5 +1,9 @@
-const { funcatron } = require('./../index')
+const { make } = require('./../index')
 
 const routes = require('./routes')
 
-module.exports = funcatron(routes)
+const funci = make({
+    static: "example/static"
+})
+
+module.exports = funci(routes)

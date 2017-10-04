@@ -1,10 +1,8 @@
 const pipe = require("./pipe")
-const router = require("./router")
-const makeRegistar = require("./registrar")
-const makeServer = require("./server")
+const routerPipeline = require("./router-pipeline")
+const serverPipeline = require("./server-pipeline")
 
-module.exports = routes => pipe(
-    router,
-    makeRegistar,
-    makeServer
-)(routes)
+module.exports = opt => routes => pipe(
+    serverPipeline,
+    routerPipeline({opt, routes})
+)(opt)

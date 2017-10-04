@@ -5,13 +5,13 @@
                 "type": "node",
                 "request": "launch",
                 "name": "Launch Watcher",
-                "program": "${workspaceRoot}/watcher.js"
+                "program": "${workspaceRoot}/tools/watcher.js"
             },
             {
                 "type": "node",
                 "request": "launch",
                 "name": "Launch Test",
-                "program": "${workspaceRoot}/run-tests.js"
+                "program": "${workspaceRoot}/tools/run-tests.js"
             }
         ]
     }
