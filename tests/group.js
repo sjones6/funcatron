@@ -5,7 +5,37 @@ const group = require('../src/group')
 describe('group', function() {
     
     it('should take a default options object', () => {
-        assert(typeof group({}), true)
+        assert.strictEqual(typeof group({}) === 'function', true)
+    })
+
+    it('should return a new routes array given a route array', () => {
+        assert.strictEqual(Array.isArray(group({})([])), true)
+    })
+
+    it('should handle a route partial with params and special chars', () => {
+        const handler = (() => {})
+        const makeUserGroup = group({
+            path: "/user"
+        })
+
+        const userGroup = makeUserGroup([
+            {
+                path: "/:user/profile",
+                handler
+            },
+            {
+                path: "/:user/(.*)",
+                handler
+            },
+            {
+                path: "/:user?",
+                handler
+            }
+        ])
+
+        assert.strictEqual(userGroup[0].path, "/user/:user/profile")
+        assert.strictEqual(userGroup[1].path, "/user/:user/(.*)")
+        assert.strictEqual(userGroup[2].path, "/user/:user?")
     })
 
     it('should apply a set of group options', () => {
