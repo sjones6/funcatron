@@ -10,10 +10,7 @@ module.exports = makeAuth([
     {
         path: '/login',
         handler: stack(
-            ({req, res, next}) => {
-                console.log('middleware')
-                next({req, res})
-            },
+            ({req, res, next}) => next({req, res}),
             middleStack,
             ({req, res}) => {
                 res.end("Logged in!")

@@ -4,7 +4,7 @@ const routes = require('./routes')
 
 const funci = make({
     static: "example/static",
-    https: false
+    http: require("./certs/certs")
 })
 
 module.exports = funci(routes)

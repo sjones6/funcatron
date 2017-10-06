@@ -12,6 +12,12 @@
                 "request": "launch",
                 "name": "Launch Test",
                 "program": "${workspaceRoot}/tools/run-tests.js"
+            },
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Server",
+                "program": "${workspaceRoot}/example/app.js"
             }
         ]
     }

@@ -58,5 +58,4 @@ typings/
 .env
 
 # Local
-call-reduce/
-
+example/certs/server*
