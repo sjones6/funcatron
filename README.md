@@ -1,4 +1,5 @@
-[![Join the chat at https://gitter.im/funcatron-funcatron/core](https://badges.gitter.im/funcatron-funcatron/Lobby.svg)](https://gitter.im/funcatron-funcatron/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/sjones6/funcatron.svg?branch=master)](https://travis-ci.org/sjones6/funcatron)
+[![Chat at https://gitter.im/funcatron-funcatron/core](https://badges.gitter.im/funcatron-funcatron/Lobby.svg)](https://gitter.im/funcatron-funcatron/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Funcatron
 
