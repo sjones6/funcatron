@@ -5,7 +5,9 @@ const { join } = require('path')
 const cwd = process.cwd()
 
 // Instantiate a Mocha instance.
-const mocha = new Mocha()
+const mocha = new Mocha({
+    reporter: 'dot'
+})
 
 // Add each .js file to the mocha instance
 const readDir = dir => {

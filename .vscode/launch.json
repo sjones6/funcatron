@@ -5,7 +5,8 @@
                 "type": "node",
                 "request": "launch",
                 "name": "Launch Watcher",
-                "program": "${workspaceRoot}/tools/watcher.js"
+                "program": "${workspaceRoot}/tools/watcher.js",
+                "console": "integratedTerminal"
             },
             {
                 "type": "node",

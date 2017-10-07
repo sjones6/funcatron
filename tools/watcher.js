@@ -27,11 +27,9 @@ function restart(reason, file) {
 
     tester = spawn("node", [
         join(process.cwd(), "/tools/run-tests.js")
-    ])
-    tester.stderr.on('data', err => {
-        console.log(`server err: ${err}`)
+    ], {
+        stdio: 'inherit'
     })
-    tester.stdout.on('data', data => console.log(data.toString("utf8")))
 
     tester.on('exit', code => {
         if (code !== 0) {
