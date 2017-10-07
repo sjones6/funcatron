@@ -46,7 +46,7 @@ Our [Code of Conduct](https://github.com/sjones6/funcatron/blob/master/CODE_OF_C
 
 A couple developer tools are setup to make the work easier:
 
-* Watch files for changes, run tests, and restart the example project: `node watcher.js` 
+* Watch files for changes, run tests, and restart the example project: `node tools/watcher.js` 
 * run tests with mocha: `npm test`
 * For VS Code users: there's a few launch scripts bundled in `.vscode` directory
 
