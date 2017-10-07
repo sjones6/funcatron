@@ -1,5 +1,7 @@
 # Funcatron
 
+[![Join the chat at https://gitter.im/funcatron-funcatron/Lobby](https://badges.gitter.im/funcatron-funcatron/Lobby.svg)](https://gitter.im/funcatron-funcatron/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A functional framework for composing Node applications
 
 ## Documentation
