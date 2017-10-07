@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/sjones6/funcatron.svg?branch=master)](https://travis-ci.org/sjones6/funcatron)
+[![npm version](https://badge.fury.io/js/funcatron.svg)](https://badge.fury.io/js/funcatron)
+[![Chat at https://gitter.im/funcatron-funcatron/core](https://badges.gitter.im/funcatron-funcatron/Lobby.svg)](https://gitter.im/funcatron-funcatron/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # Funcatron
 
 A functional framework for composing Node applications
