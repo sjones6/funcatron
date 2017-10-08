@@ -1,8 +1,14 @@
 const assert = require('assert')
 
+const f = require('./../index')
 const eagerStack = require('./../src/eager-stack')
 
 describe('eagerStack', function() {
+
+    it('should be available in the core distro', () => {
+        assert.equal(eagerStack, f.eagerStack)
+    })
+
     it('should eagerly evaluate the middleware methods', () => {
         const stack = eagerStack(
             ({req, res, next}) => {
