@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/sjones6/funcatron.svg?branch=master)](https://travis-ci.org/sjones6/funcatron)
+[![Coverage Status](https://coveralls.io/repos/sjones6/funcatron/badge.svg?branch=master)](https://coveralls.io/r/sjones6/funcatron?branch=master)
 [![npm version](https://badge.fury.io/js/funcatron.svg)](https://badge.fury.io/js/funcatron)
 [![Chat at https://gitter.im/funcatron-funcatron/core](https://badges.gitter.im/funcatron-funcatron/Lobby.svg)](https://gitter.im/funcatron-funcatron/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 

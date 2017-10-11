@@ -2,6 +2,7 @@ example/
 call-reduce/
 .vs-code
 tests/
+coverage/
 node_modules/
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
