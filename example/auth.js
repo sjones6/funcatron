@@ -16,9 +16,5 @@ module.exports = makeAuth([
                 res.end("Logged in!")
             }
         )
-    },
-    {
-        path: '/logout',
-        handler: ({req, res}) => res.end('Logged out!')
     }
 ])

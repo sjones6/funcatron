@@ -8,6 +8,18 @@ describe('group', function() {
         assert.strictEqual(typeof group({}) === 'function', true)
     })
 
+    it('should handle a falsey path', () => {
+        const makeGroup = group({
+            path: false
+        });
+        const fakePath = "/somepath"
+        const routes = makeGroup([{
+            path: fakePath,
+            handler: () => {}
+        }])
+        assert.strictEqual(routes[0].path, fakePath)
+    })
+
     it('should return a new routes array given a route array', () => {
         assert.strictEqual(Array.isArray(group({})([])), true)
     })
