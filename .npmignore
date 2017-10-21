@@ -1,6 +1,8 @@
 example/
 call-reduce/
-.vs-code
+.travis.yml
+.coveralls.yml
+.vscode/
 tests/
 coverage/
 node_modules/
